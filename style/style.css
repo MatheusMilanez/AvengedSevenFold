@@ -1,0 +1,77 @@
+@import url(/style/reset.css);
+@import url(/style/home.css);
+@import url(/style/playlist.css);
+@import url(/style/history.css);
+:root{
+    --cor-preto:#000000;
+    --cor-branco:#FFFFFF;
+}
+
+body{
+    background-color: var(--cor-branco);
+    font-size: 24px;
+    font-weight: 400px;
+    font-family: 'Jacques Francois', serif;
+    color: var(--cor-preto);
+}
+
+.cabecalho{
+    max-width: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0;
+    height: 50px;
+}
+
+#check{
+    display: none;
+}
+
+.img-menu-bar{
+    width: 30px;
+    position: relative;
+}
+
+.img-menu-bar:hover{
+    cursor: pointer;
+}
+
+.titulo-principal{
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--cor-preto);
+}
+
+
+.menu-nav{
+    background-color: var(--cor-preto);
+    position: absolute;
+    top: 80px;
+    left: -5000px;
+    width: 100%;
+    text-align: center;
+    transition: 1s;
+}
+
+#check:checked ~ nav{
+    left: 0;
+    transition: 1s;
+}
+
+.menu-li{
+    padding: 25px;
+}
+
+.menu-li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor-branco);
+}
+
+.menu-li:hover{
+   cursor: pointer;    
+}
+
+
+

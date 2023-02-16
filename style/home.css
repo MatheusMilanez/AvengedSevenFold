@@ -1,0 +1,65 @@
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-principal{
+    width: 328px;
+    height: 180px;
+    
+}
+
+.titulo-secundario{
+    margin: 20px 0;
+}
+
+.img-youtube{
+    max-width: 328px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.p-youtube{
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+.img-instagram{
+    max-width: 390px;
+    height: 180px;
+    border-radius: 15px;
+}
+
+.p-instagram{
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+.footer{
+    text-align: center;
+}
+
+.p-footer{
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+
+@media (min-width:720px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black ;
+    } 
+
+    .cabecalho{
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .titulo-principal{
+        padding: 0 25px;
+    }    
+}
